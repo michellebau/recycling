@@ -1,0 +1,24 @@
+step_id,item_id,step_description
+1,1,Empty out can.
+2,1,"""Do not crush can. For areas with single-stream recycling, crushed cans are harder to detect when being sorted at recycling facilities."""
+3,1,Place it in the metal recycling bin.
+4,1,"""If you are home, ensure the bin is placed curbside on your scheduled recycling pickup day."""
+5,2,Delete any personal information. You can wipe the memory or reset the camera.
+6,2,"""Remove any batteries from your camera, they may need to be recycled separately."""
+7,2,Note: lithium-ion batteries and cameras should not go in household garbage or recycling bins.
+8,2,"""To determine your nearest recycling option, please visit call2recycle.org/locator or search.earth911.com."""
+9,3,Do not place in the trash or municipal recycling bins.
+10,3,"""To remove from vehicle, wear gloves and protection. Old batteries may have a leak and coming in contact with battery acid can be dangerous."""
+11,3,Disconnect the cable from the negative terminal of your battery. It should have a black or gray coating. You’ll need to use a wrench to loosen the nut on the terminal. Be sure your wrench doesn’t touch both terminals at once.
+12,3,"""Remove the cable from positive terminal, which should have a red coating."""
+13,3,"""Once the battery terminals are removed, nearly all batteries will have a hold-down device or devices in the form of a strap, clip, or block at the bottom of the battery. They will also need to be removed."""
+14,3,"""Once you have safely removed your old car battery, store it in a plastic bag. Use two bags or a thick, heavy-duty option to ensure your old battery doesn’t stain the surrounding area as you transport the battery. Plastic bags will also ensure any battery fluid leak remains safely contained. Never store or transport your battery on its side to avoid any potential leaks or damage to the battery."""
+15,3,You can take your old battery to your local household hazardous waste collection program or a battery retailer.
+16,3,You also have the option to take your old battery to any metal recycling establishment. They may pay you for the battery or batteries you drop off.
+17,3,Another option is to drop off your battery at your nearest AutoZone in exchange for a gift card.
+18,4,"""Unfortunately, paper cups are not recyclable and should be placed in trash bins."""
+19,4,"""The paper sleeve for coffee cups may be recycled with corrugated cardboard. The plastic lid should be recyclable if your local program accepts #1-7 plastics in non-bottle form. The straw or stirrer should be thrown away. If you're unsure, it's best not to place it in the recycling bin."""
+20,4,"""If you would like to check local guidelines, you can search for your city/county name, followed by """"recycling guidelines"""" or """"waste management"""" online."""
+21,4,"""If in doubt and recycling is not possible, try using a reusable coffee mug as a more sustainable choice next time."""
+22,5,Plastic utensils cannot be recycled.
+23,5,Carrying and using a stainless steel set of utensils can be a more sustainable choice.
