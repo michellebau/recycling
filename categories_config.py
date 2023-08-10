@@ -1,0 +1,1 @@
+categories = ['Aluminum cans', 'Digital cameras', 'Lead acid batteries', 'Paper coffee cups', 'Plastic utensils']

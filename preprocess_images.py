@@ -3,6 +3,8 @@ import glob
 import torch
 from PIL import Image
 from torchvision.transforms import Resize, ToTensor, Normalize
+from categories_config import categories
+
 
 # Set the directory where your images are saved
 data_dir = '/Users/michellebautista/Desktop/IS219'
@@ -14,8 +16,6 @@ image_size = (224, 224)
 mean = [0.485, 0.456, 0.406]
 std = [0.229, 0.224, 0.225]
 
-
-categories = ['aluminum_cans', 'digital_cameras', 'lead_acid_batteries', 'paper_coffee_cups', 'plastic_utensils']
 
 # Create a list to hold your dataset
 dataset = []
