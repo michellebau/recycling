@@ -2,3 +2,4 @@ myproject_env/
 *.pth
 *.pt
 *.db
+__pycache__/
