@@ -5,8 +5,10 @@ import sqlite3
 from PIL import Image
 import io
 from categories_config import categories
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 class SimpleCNN(nn.Module):
    def __init__(self, num_classes=5):
