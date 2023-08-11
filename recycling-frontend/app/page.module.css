@@ -34,6 +34,23 @@
   border-radius: var(--border-radius);
 }
 
+.header {
+  width: 80%;
+  text-align: center; /* Centers the text */
+  margin-top: 0px;
+  margin-bottom: 20px; /* Adds some space after the header before the form */
+  padding: 10px; /* Adds some padding around the header content */
+  color: navy;
+}
+
+.header h1 {
+  margin-bottom: 10px; /* Adds some space between the title and the description */
+}
+
+.header p {
+  font-size: 18px; /* Adjusts the size of the description */
+}
+
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -52,6 +69,7 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  color: navy;
 }
 
 .card span {

@@ -1,0 +1,27 @@
+.recyclingForm {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto; /* centers the form if it's block-level */
+  }
+  
+  .labelStyle {
+    font-size: 24px;
+    font-weight: bold;
+    color: navy;
+  }
+  
+  .buttonStyle {
+    font-size: 20px; /* Increase or decrease as per your preference */
+    padding: 10px 20px; /* Adds some padding for a bigger button appearance */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: none; /* Removes default border */
+    background-color: navy; /* Adds a background color, adjust as needed */
+    color: white; /* Text color, adjust as needed */
+    border-radius: 5px; /* Makes the button edges rounded */
+    transition: background-color 0.3s; /* Smoothens the hover effect */
+  }
+  
+  .buttonStyle:hover {
+    background-color: #555; /* Changes button color slightly on hover for a subtle effect */
+  }
+  

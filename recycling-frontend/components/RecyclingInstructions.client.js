@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react';
+import styles from './RecyclingInstructions.module.css';
+
 
 function RecyclingInstructions() {
     const [steps, setSteps] = useState(null);
@@ -35,12 +37,12 @@ function RecyclingInstructions() {
 
     return (
         <div>
-            <form onSubmit={onSubmit}>
-                <label>
+            <form onSubmit={onSubmit} className={styles.recyclingForm}>
+                <label className={styles.labelStyle}>
                     Upload an Image:
                     <input type="file" name="file" accept="image/*" />
                 </label>
-                <button type="submit">Submit</button>
+                <button type="submit" className={styles.buttonStyle}>Submit</button>
             </form>
 
             {isLoading && <p>Loading...</p>}
