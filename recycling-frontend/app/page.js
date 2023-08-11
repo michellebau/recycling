@@ -7,41 +7,26 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      {/* Introducing the new header and description */}
+      <header className={styles.header}>
+          <h1>Welcome to Recycling Assistant</h1>
+          <p>This web app helps identify waste items from your uploaded images and provides recycling instructions. To get started, simply upload a picture of the waste item, and we'll guide you through its recycling process.</p>
+      </header>
 
       <div>
       <RecyclingInstructions />
-      {/* Other components or content */}
       </div>
       <div className={styles.grid}>
         <a
-          href=""
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Vercel <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Made with Next.js and Vercel.</p>
         </a>
 
         <a
