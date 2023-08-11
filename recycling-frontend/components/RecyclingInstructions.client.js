@@ -45,6 +45,11 @@ function RecyclingInstructions() {
                 <button type="submit" className={styles.buttonStyle}>Submit</button>
             </form>
 
+            {/* Display the disclaimer */}
+        <p className={styles.disclaimer}>
+            Disclaimer: While we strive for accuracy, there may be instances where the image is not recognized correctly. Please double-check with local recycling guidelines if unsure.
+        </p>
+
             {isLoading && <p>Loading...</p>}
             {steps && <div>
     <h2>Recycling Instructions:</h2>
