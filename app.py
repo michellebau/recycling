@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 import torch, torch.nn as nn
 from torchvision import transforms
-import sqlite3, io, logging
+import sqlite3, io, logging, os
 from PIL import Image
 from categories_config import categories
 from flask_cors import CORS
@@ -120,4 +120,4 @@ def get_recycling_info(item_name):
     return item_id, steps
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
