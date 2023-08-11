@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 import torch, torch.nn as nn
 from torchvision import transforms
 import sqlite3, io, logging
@@ -13,6 +13,12 @@ app = Flask(__name__)
 CORS(app)
 # CORS(app, resources={r"/*": {"origins": "*"}})
 app.wsgi_app = ProxyFix(app.wsgi_app)
+
+# Place the static serving route here
+@app.route('/', defaults={"filename": "index.html"})
+@app.route('/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('recycling-frontend/build', filename)
 
 class SimpleCNN(nn.Module):
    def __init__(self, num_classes=5):

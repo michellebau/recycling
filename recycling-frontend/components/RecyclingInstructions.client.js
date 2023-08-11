@@ -14,10 +14,10 @@ function RecyclingInstructions() {
 
         setIsLoading(true);
         try {
-            const response = await fetch('http://localhost:8000/identify_waste', {
+            const response = await fetch('http://localhost:5000/identify_waste', {
                 method: 'POST',
                 body: formData
-            });
+            });            
 
             if (!response.ok) {
                 throw new Error('Network response was not ok');
