@@ -1,14 +1,18 @@
 from flask import Flask, request, jsonify
 import torch, torch.nn as nn
 from torchvision import transforms
-import sqlite3
+import sqlite3, io, logging
 from PIL import Image
-import io
 from categories_config import categories
 from flask_cors import CORS
+from werkzeug.middleware.proxy_fix import ProxyFix
+
+logging.basicConfig(filename='server.log', level=logging.DEBUG)
 
 app = Flask(__name__)
 CORS(app)
+# CORS(app, resources={r"/*": {"origins": "*"}})
+app.wsgi_app = ProxyFix(app.wsgi_app)
 
 class SimpleCNN(nn.Module):
    def __init__(self, num_classes=5):
@@ -53,13 +57,20 @@ def preprocess_image(image_bytes):
 
 @app.route('/identify_waste', methods=['POST'])
 def identify_waste():
+    print("Headers:")
+    print(request.headers)
+    print("Form Data:")
+    print(request.form)
+    print("Files:")
+    print(request.files)
     if 'file' not in request.files:
         return jsonify({'error': 'no file'}), 400
 
     file = request.files['file']
 
     # Convert image bytes to tensor
-    img_bytes = file.read()
+    img_bytes = file.stream.read()
+
 
     # Safety check and exception handling
     try:
