@@ -25,3 +25,8 @@
     background-color: #555; /* Changes button color slightly on hover for a subtle effect */
   }
   
+  .disclaimer {
+    color: #666;   /* grayish text color for the disclaimer */
+    font-size: 0.9em;  /* slightly smaller than regular text */
+    margin-top: 10px;
+}
